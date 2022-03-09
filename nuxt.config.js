@@ -3,10 +3,10 @@ import colors from 'vuetify/es5/util/colors'
 export default {
 //comment to push a server build
       // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-    ssr: true,
+    ssr: false,
 
     // Target: https://go.nuxtjs.dev/config-target
-   // target: 'static',
+    target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Wedding',

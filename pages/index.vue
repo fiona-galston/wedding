@@ -16,7 +16,7 @@
                   ]"
                   class="font-weight-light"
                 >
-                  <v-img :src="require('@/assets/wouradventurecontinues.svg')">
+                  <v-img :src="require('@/assets/wouradventurecontinues1.svg')">
                                 
                   </v-img>
                   <v-btn

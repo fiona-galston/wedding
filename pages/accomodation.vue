@@ -163,7 +163,7 @@
             <v-img
               :src="require('@/assets/podoutside.jpg')"
               class="mb-4"
-              height="275"
+              height="500"
               max-width="100%"
             ></v-img>
 
@@ -214,7 +214,7 @@
             <v-img
               :src="require('@/assets/cottages.jpg')"
               class="mb-4"
-              height="275"
+              height="500"
               max-width="100%"
             ></v-img>
             <p>
@@ -261,7 +261,7 @@
             <v-img
               :src="require('@/assets/tent.jpg')"
               class="mb-4"
-              height="275"
+              height="500"
               max-width="100%"
             ></v-img>
             <p>Limited onsite Camping available</p>

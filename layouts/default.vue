@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar :clipped-left="clipped" fixed app>
+    <v-app-bar :clipped-left="clipped" fixed app> <!--fg could be this -->
       <v-spacer />
       <NuxtLink to="/">
         <v-btn icon>

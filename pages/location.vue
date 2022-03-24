@@ -51,6 +51,11 @@
               <a href="https://www.google.com/maps/place/Northside+Farm/@55.0032617,-1.8660044,13.97z/data=!4m5!3m4!1s0x487ddbcf505ab397:0x4e3c8d772456f63!8m2!3d55.0013199!4d-1.8620034">Go to Google Maps</a>
             </div>
             <div class="py-12"></div>
+
+            </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
 <div>
   <h2>How Far is it?</h2>
           <v-simple-table>

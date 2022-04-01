@@ -1,12 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-//comment to push a server builds
-      // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-    ssr: false,
+  //comment to push a server builds
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
 
-    // Target: https://go.nuxtjs.dev/config-target
-    target: 'static',
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Wedding',
@@ -40,8 +40,10 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-   // '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
+    'nuxt-password-protect'
   ],
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -50,33 +52,42 @@ export default {
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
- /* pwa: {
-    manifest: {
-      lang: 'en',
-    },
-  },*/
+  /* pwa: {
+     manifest: {
+       lang: 'en',
+     },
+   },*/
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       themes: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      }
+        primary: colors.blue.darken2,
+        accent: colors.grey.darken3,
+        secondary: colors.amber.darken3,
+        info: colors.teal.lighten1,
+        warning: colors.amber.base,
+        error: colors.deepOrange.accent4,
+        success: colors.green.accent3,
+      },
+    }
   },
 
   fontawesome: {
     icons: {
-      solid: true, 
+      solid: true,
       brands: true
     }
   },
+
+  passwordProtect: {
+    enabled: true,
+    formPath: '/login',
+    password: 'labrador3',
+    tokenSeed: 3343490,
+    queryString: '_pw',
+    cookieName: '_password'
+  }
 
 }

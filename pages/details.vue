@@ -23,7 +23,6 @@
 
       <v-container class="text-center">
         <h2 class="display-2 font-weight-bold mb-3">The Wedding Weekend</h2>
-
         <v-responsive class="mx-auto mb-12" width="56">
           <v-divider class="mb-1"></v-divider>
 
@@ -183,6 +182,18 @@
           </template>
         </v-simple-table>
         <div class="py-12"></div>
+        <v-btn
+                  color="grey"
+                  @click="logout()"
+                  outlined
+                  large
+                >
+                  <span class="grey--text text--darken-1 font-weight-bold"
+                    >Log out</span
+                  >
+                </v-btn>
+
+                
       </v-container>
       <div class="py-12"></div>
     </section>
@@ -192,6 +203,15 @@
 <script>
 export default {
   name: 'Details',
+  middleware: ['password-protect'],
+  methods: {
+    logout() {
+      this.$passwordProtect.removeAuthorisation()
+      this.$nextTick(() => {
+        this.$router.push('/')
+      })
+    },
+  },
   data() {
     return {
       events: [
@@ -228,8 +248,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 tbody {
-     tr:hover {
-        background-color: transparent !important;
-     }
+  tr:hover {
+    background-color: transparent !important;
   }
+}
 </style>
